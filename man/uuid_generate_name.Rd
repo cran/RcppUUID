@@ -4,10 +4,12 @@
 \alias{uuid_generate_name}
 \title{Generate UUIDs Version 5}
 \usage{
-uuid_generate_name(x)
+uuid_generate_name(x, ns = "x500dn")
 }
 \arguments{
 \item{x}{Character vector.}
+
+\item{ns}{Namespace string. Allowed values: dns, url, oid, x500dn.}
 }
 \value{
 Character vector with UUIDs.
@@ -15,7 +17,7 @@ Character vector with UUIDs.
 \description{
 Function generates name-based uuid is derived from content in a namespace.
 A uuid with identical content shall yield the same uuid.
-Hashing algorithm is SHA1. Namespace is X.500 DN.
+Hashing algorithm is SHA1.
 }
 \note{
 This function generates valid uuids for the \code{NA} and empty strings.

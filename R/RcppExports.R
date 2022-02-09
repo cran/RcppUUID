@@ -6,9 +6,10 @@
 #' @description
 #' Function generates name-based uuid is derived from content in a namespace.
 #' A uuid with identical content shall yield the same uuid.
-#' Hashing algorithm is SHA1. Namespace is X.500 DN.
+#' Hashing algorithm is SHA1.
 #'
 #' @param x Character vector.
+#' @param ns Namespace string. Allowed values: dns, url, oid, x500dn.
 #' @return Character vector with UUIDs.
 #'
 #' @note
@@ -25,8 +26,8 @@
 #' # generate name UUIDs
 #' uuid_generate_name(c("one", "two"))
 #'
-uuid_generate_name <- function(x) {
-    .Call(`_RcppUUID_uuid_generate_name`, x)
+uuid_generate_name <- function(x, ns = "x500dn") {
+    .Call(`_RcppUUID_uuid_generate_name`, x, ns)
 }
 
 #' @title Generates Nil UUIDs
