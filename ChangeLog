@@ -1,0 +1,44 @@
+2025-02-12  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Release 1.2.0
+
+2025-02-07  Dirk Eddelbuettel  <edd@debian.org>
+
+	* inst/tinytest/test-uuid.R: Added tests for uuid_generate_time
+
+2025-02-06  Dirk Eddelbuettel  <edd@debian.org>
+
+	* README.md: Mention v7 UUIDs, general edits
+	* DESCRIPTION (Description): Idem
+	* R/RcppUUID-package.R: Idem
+	* man/RcppUUID.Rd: Regenerated
+
+2025-02-05  Dirk Eddelbuettel  <edd@debian.org>
+
+	* src/uuid_time.cpp: Add v7 support for time-based UUIDs
+	* man/uuid_generate_time.Rd: Generated
+	* src/RcppExports.cpp: Regenerated
+	* R/RcppExports.R: Idem
+	* NAMESPACE: Idem
+
+	* DESCTIPTION: Add version requirement to LinkingTo: for BH, with
+	that add versioned Depends: on R itself
+
+	* .editorconfig: Added
+	* .Rbuildignore: Updated
+
+2025-02-03  Dirk Eddelbuettel  <edd@debian.org>
+
+	* inst/NEWS.Rd: Added based on NEWS.md
+
+2025-02-02  Dirk Eddelbuettel  <edd@debian.org>
+
+	* README.md: More edits, expand installation, move it lower
+
+2025-02-01  Dirk Eddelbuettel  <edd@debian.org>
+
+	* README.md: Add badged
+
+2025-01-31  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Release 1.1.2

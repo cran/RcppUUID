@@ -2,24 +2,28 @@
 % Please edit documentation in R/RcppUUID-package.R
 \docType{package}
 \name{RcppUUID}
-\alias{RcppUUID}
 \alias{RcppUUID-package}
+\alias{RcppUUID}
 \title{Generating Universally Unique Identificators}
 \description{
-Provides functions to generating a vector of Universally Unique Identifiers (UUID).
-Used implementation from the Boost C++ library. Supported random (version 4) and name (version 5)
-UUIDs. UUIDs generation are parallelized by OpenMP.
+Provides functions to generating a vector of Universally Unique Identifiers (UUID)
+using the implementation from the Boost C++ library. Supports random (version 4), name (version 5)
+and time-based (version 7) UUIDs. UUIDs generation is parallelized by OpenMP.
 }
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://artemklevtsov.gitlab.io/rcppuuid}
-  \item \url{https://gitlab.com/artemklevtsov/rcppuuid}
-  \item Report bugs at \url{https://gitlab.com/artemklevtsov/rcppuuid/-/issues}
+  \item \url{https://github.com/eddelbuettel/rcppuuid}
+  \item Report bugs at \url{https://github.com/eddelbuettel/rcppuuid/issues}
 }
 
 }
 \author{
-\strong{Maintainer}: Artem Klevtsov \email{a.a.klevtsov@gmail.com} (\href{https://orcid.org/0000-0003-0492-6647}{ORCID})
+\strong{Maintainer}: Dirk Eddelbuettel \email{edd@debian.org} (\href{https://orcid.org/0000-0001-6419-907X}{ORCID})
+
+Authors:
+\itemize{
+  \item Artem Klevtsov \email{a.a.klevtsov@gmail.com} (\href{https://orcid.org/0000-0003-0492-6647}{ORCID})
+}
 
 }
